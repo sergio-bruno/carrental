@@ -1,0 +1,5 @@
+loggig:
+  level:
+    br:
+      com:
+        slbruno: DEBUG

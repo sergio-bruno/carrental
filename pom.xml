@@ -50,7 +50,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- swagger - Para permitir documentação e testes em cima da API -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -61,6 +61,12 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
+		</dependency>
+
+		<!-- actuator - auditoria e métricas, builds, commits, logs -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
