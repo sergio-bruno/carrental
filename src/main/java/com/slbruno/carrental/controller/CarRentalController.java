@@ -10,6 +10,6 @@ public class CarRentalController {
 
 	@GetMapping
 	public String Hello() {
-		return "Hi, car rental ok";
+		return "Hi, car rental ok, second message SonarCloud...";
 	}
 }
