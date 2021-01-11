@@ -1,0 +1,10 @@
+dist: xenial
+language: java
+sudo: false
+jdk: openjdk15
+intsall: true
+cache:
+  directories:
+    - $HOME/.m2
+before_install:
+  - chmod +x mvnw
