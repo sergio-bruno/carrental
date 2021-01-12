@@ -1,6 +1,7 @@
 package com.slbruno.carrental.user.entity;
 
-import lombok.Data;
+import java.time.LocalDate;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,11 +15,11 @@ import javax.persistence.OneToMany;
 
 import com.slbruno.carrental.car.entity.Car;
 import com.slbruno.carrental.entity.Auditable;
+import com.slbruno.carrental.phone.entity.Phone;
 import com.slbruno.carrental.user.enums.Gender;
 import com.slbruno.carrental.user.enums.Role;
 
-import java.time.LocalDate;
-import java.util.List;
+import lombok.Data;
 
 @Data
 @Entity
@@ -53,6 +54,9 @@ public class User extends Auditable {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Car> cars;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private List<Phone> phones;
+    
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     private Role role;
