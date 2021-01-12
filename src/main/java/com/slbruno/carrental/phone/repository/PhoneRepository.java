@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface PhoneRepository extends JpaRepository<Phone, Long> {
 
-    Optional<Phone> findByNumberAndAreaCodeAndUser(Integer number, Integer area_code, User user);
+    Optional<Phone> findByNumberAndUser(int number, User user);
 
     Optional<Phone> findByIdAndUser(Long id, User user);
 
