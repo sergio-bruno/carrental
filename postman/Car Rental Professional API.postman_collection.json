@@ -124,7 +124,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Fiat\",\n\t\"age\": 132\n}"
+							"raw": "{\n\t\"name\": \"Fiat\"\n}"
 						},
 						"description": ""
 					},
