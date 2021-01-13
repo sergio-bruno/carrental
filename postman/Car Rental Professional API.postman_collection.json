@@ -14,7 +14,7 @@
 				{
 					"name": "Test ",
 					"request": {
-						"url": "http://localhost:8080/api/cr/cars",
+						"url": "http://localhost:8080/api/cr/hello",
 						"method": "GET",
 						"header": [],
 						"body": {},
@@ -31,7 +31,7 @@
 				{
 					"name": "CreateUser",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/users",
+						"url": "http://localhost:8080/api/cr/users",
 						"method": "POST",
 						"header": [
 							{
@@ -51,7 +51,7 @@
 				{
 					"name": "Update User",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/users/1",
+						"url": "http://localhost:8080/api/cr/users/1",
 						"method": "PUT",
 						"header": [
 							{
@@ -71,7 +71,7 @@
 				{
 					"name": "Delete User",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/users/1",
+						"url": "http://localhost:8080/api/cr/users/1",
 						"method": "DELETE",
 						"header": [],
 						"body": {},
@@ -82,7 +82,7 @@
 				{
 					"name": "Authenticate User",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/users/authenticate",
+						"url": "http://localhost:8080/api/cr/users/authenticate",
 						"method": "POST",
 						"header": [
 							{
@@ -108,7 +108,7 @@
 				{
 					"name": "Create manufacturer",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/manufacturer",
+						"url": "http://localhost:8080/api/cr/manufacturer",
 						"method": "POST",
 						"header": [
 							{
@@ -133,7 +133,7 @@
 				{
 					"name": "Find Manufacturer By Name",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/manufacturer/Fiat",
+						"url": "http://localhost:8080/api/cr/manufacturer/Fiat",
 						"method": "GET",
 						"header": [],
 						"body": {},
@@ -144,7 +144,7 @@
 				{
 					"name": "List manufacturer",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/manufacturer",
+						"url": "http://localhost:8080/api/cr/manufacturer",
 						"method": "GET",
 						"header": [],
 						"body": {},
@@ -155,7 +155,7 @@
 				{
 					"name": "Delete manufacturer by Id",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/manufacturer/1",
+						"url": "http://localhost:8080/api/cr/manufacturer/1",
 						"method": "DELETE",
 						"header": [],
 						"body": {},
@@ -172,7 +172,7 @@
 				{
 					"name": "Craete carrental",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/carrental",
+						"url": "http://localhost:8080/api/cr/carrental",
 						"method": "POST",
 						"header": [
 							{
@@ -197,7 +197,7 @@
 				{
 					"name": "List carrental",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/carrental",
+						"url": "http://localhost:8080/api/cr/carrental",
 						"method": "GET",
 						"header": [],
 						"body": {},
@@ -208,7 +208,7 @@
 				{
 					"name": "Delete carrental by ID",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/carrental/1",
+						"url": "http://localhost:8080/api/cr/carrental/1",
 						"method": "DELETE",
 						"header": [],
 						"body": {},
@@ -219,7 +219,7 @@
 				{
 					"name": "Find carrental by ID",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/carrental/1",
+						"url": "http://localhost:8080/api/cr/carrental/1",
 						"method": "GET",
 						"header": [],
 						"body": {},
@@ -236,7 +236,7 @@
 				{
 					"name": "Create Car",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/car",
+						"url": "http://localhost:8080/api/cr/car",
 						"method": "POST",
 						"header": [
 							{
@@ -261,7 +261,7 @@
 				{
 					"name": "Get Car by Id",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/car/1",
+						"url": "http://localhost:8080/api/cr/car/1",
 						"method": "GET",
 						"header": [
 							{
@@ -283,7 +283,7 @@
 				{
 					"name": "List cars by user",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/cars",
+						"url": "http://localhost:8080/api/cr/cars",
 						"method": "GET",
 						"header": [
 							{
@@ -305,7 +305,7 @@
 				{
 					"name": "Update car by id",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/car/1",
+						"url": "http://localhost:8080/api/cr/car/1",
 						"method": "PUT",
 						"header": [
 							{
@@ -330,7 +330,7 @@
 				{
 					"name": "Delete car by ID",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/car/1",
+						"url": "http://localhost:8080/api/cr/car/1",
 						"method": "DELETE",
 						"header": [
 							{
@@ -358,7 +358,7 @@
 				{
 					"name": "Create Phone",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/phone",
+						"url": "http://localhost:8080/api/cr/phone",
 						"method": "POST",
 						"header": [
 							{
@@ -383,7 +383,7 @@
 				{
 					"name": "Get Phone by Id",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/phone/1",
+						"url": "http://localhost:8080/api/cr/phone/1",
 						"method": "GET",
 						"header": [
 							{
@@ -405,7 +405,7 @@
 				{
 					"name": "List phone by user",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/phone",
+						"url": "http://localhost:8080/api/cr/phone",
 						"method": "GET",
 						"header": [
 							{
@@ -427,7 +427,7 @@
 				{
 					"name": "Update phone by id",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/phone/1",
+						"url": "http://localhost:8080/api/cr/phone/1",
 						"method": "PUT",
 						"header": [
 							{
@@ -452,7 +452,7 @@
 				{
 					"name": "Delete phone by ID",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/phone/1",
+						"url": "http://localhost:8080/api/cr/phone/1",
 						"method": "DELETE",
 						"header": [
 							{
@@ -474,7 +474,7 @@
 				{
 					"name": "Find phone By Number and User",
 					"request": {
-						"url": "http://localhost:8080/cr/cars/phone/992117753/1",
+						"url": "http://localhost:8080/api/cr/phone/992117753/1",
 						"method": "GET",
 						"header": [],
 						"body": {},
