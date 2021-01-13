@@ -23,6 +23,9 @@ public class Car extends Auditable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
+    private String placa;
+
     @Column(nullable = false, length = 100)
     private String name;
 
