@@ -1,0 +1,499 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Car Rental Professional API",
+		"_postman_id": "28fd0039-0034-87e0-2a52-b63a24ac2160",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test Car Rental Professional API",
+			"description": "",
+			"item": [
+				{
+					"name": "Test ",
+					"request": {
+						"url": "http://localhost:8080/api/cr/cars",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/users",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Sergio Admin\",\n\t\"age\": 32,\n\t\"email\": \"sergio.bruno.ti@gmail.com\",\n\t\"gender\": \"MALE\",\n\t\"username\": \"sergio\",\n\t\"password\": \"123456\",\n\t\"birthdate\": \"08/08/1988\",\n\t\"role\": \"ADMIN\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/users/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Sergio Teste\",\n\t\"age\": 32,\n\t\"email\": \"sergio.bruno@gmail.com\",\n\t\"gender\": \"MALE\",\n\t\"username\": \"rodrigo\",\n\t\"password\": \"123456\",\n\t\"birthdate\": \"23/03/1988\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/users/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate User",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/users/authenticate",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"sergio\",\n\t\"password\": \"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manufacturer",
+			"description": "",
+			"item": [
+				{
+					"name": "Create manufacturer",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/manufacturer",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Fiat\",\n\t\"age\": 132\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Find Manufacturer By Name",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/manufacturer/Fiat",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List manufacturer",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/manufacturer",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete manufacturer by Id",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/manufacturer/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car Rental",
+			"description": "",
+			"item": [
+				{
+					"name": "Craete carrental",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/carrental",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Localiza Rent a Car\",\n\t\"foundationDate\": \"23/03/1988\"\n}\t"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List carrental",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/carrental",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete carrental by ID",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/carrental/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Find carrental by ID",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/carrental/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Car",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/car",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Jipe\",\n\t\"model\": \"Jipe Truck\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2021,\n\t\"userId\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car by Id",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/car/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List cars by user",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/cars",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NTMyMDY1LCJpYXQiOjE1OTQ1MTQwNjV9.fVm8iIvbMLhmV5IqQzzI32Lhy97aMN5FBcN1KogcBM1uDL2u0jP-a0hItON8Ua1NMY5lZxkt3j2kQ0L7BAhrvQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update car by id",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/car/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Jipe Doblo\",\n\t\"model\": \"Jipe\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2020,\n\t\"userId\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete car by ID",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/car/1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		
+		
+		
+		
+		
+		
+		
+		{
+			"name": "Phone",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Phone",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/phone",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": 988117753,\n\t\"area_code\": 81,\n\t\"country_code\": \"+55\",\n\t\"userId\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Phone by Id",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/phone/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List phone by user",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/phone",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NTMyMDY1LCJpYXQiOjE1OTQ1MTQwNjV9.fVm8iIvbMLhmV5IqQzzI32Lhy97aMN5FBcN1KogcBM1uDL2u0jP-a0hItON8Ua1NMY5lZxkt3j2kQ0L7BAhrvQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update phone by id",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/phone/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": 992117753,\n\t\"area_code\": 81,\n\t\"country_code\": \"+55\",\n\t\"userId\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete phone by ID",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/phone/1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2RyaWdvIiwiZXhwIjoxNTk0NzEwMjIyLCJpYXQiOjE1OTQ2OTIyMjJ9.Vqt1PcPUYiPDHjlwdtIlPunKPhEWPIbroOPsaie2AaeI-fjwANxPzdfNAEUwantFGyeQlXNfFpAexK-yICNSxQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Find phone By Number and User",
+					"request": {
+						"url": "http://localhost:8080/cr/cars/phone/992117753/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+		
+		
+		
+		
+	]
+}
