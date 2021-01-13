@@ -1,0 +1,5 @@
+1) Install lombok in Eclipse
+	- locate the tools folder and run lombok with the eclipse closed
+	- Lombok will automatically find all versions of Eclipse and install Lombok
+	- Restart Eclipse
+	
