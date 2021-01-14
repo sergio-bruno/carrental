@@ -24,7 +24,7 @@ public class Car extends Auditable {
     private Long id;
 
     @Column(nullable = false)
-    private String placa;
+    private String license_plate;
 
     @Column(nullable = false, length = 100)
     private String name;

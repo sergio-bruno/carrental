@@ -252,7 +252,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Jipe\",\n\t\"model\": \"Jipe Truck\",\n\t\"placa\": \"KGP1Y82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2021,\n\t\"userId\": 1\n}"
+							"raw": "{\n\t\"name\": \"Jipe\",\n\t\"model\": \"Jipe Truck\",\n\t\"license_plate\": \"KGP1Y82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2021,\n\t\"userId\": 1\n}"
 						},
 						"description": ""
 					},
@@ -321,7 +321,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Jipe Doblo\",\n\t\"model\": \"Jipe\",\n\t\"placa\": \"KGP1M82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2020,\n\t\"userId\": 1\n}"
+							"raw": "{\n\t\"name\": \"Jipe Doblo\",\n\t\"model\": \"Jipe\",\n\t\"license_plate\": \"KGP1M82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2020,\n\t\"userId\": 1\n}"
 						},
 						"description": ""
 					},

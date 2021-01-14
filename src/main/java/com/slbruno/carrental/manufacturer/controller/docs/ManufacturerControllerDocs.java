@@ -25,7 +25,6 @@ public interface ManufacturerControllerDocs {
     })
     ManufacturerDTO findByName(String name);
 
-
     @ApiOperation(value = "List all registered manufacturers")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Return all registered manufacturers")
