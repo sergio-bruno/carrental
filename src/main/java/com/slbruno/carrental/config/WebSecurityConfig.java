@@ -25,6 +25,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+	private static final String HELLO_API_URL = "/api/cr/hello/**";
     private static final String USER_API_URL = "/api/cr/user/**";
     private static final String CARRENTAL_API_URL = "/api/cr/carrental/**";
     private static final String MANUFACTURER_API_URL = "/api/cr/manufacturer/**";
@@ -71,7 +72,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf().disable()
-                .authorizeRequests().antMatchers(USER_API_URL, H2_CONSOLE_URL, SWAGGER_URL).permitAll()
+                .authorizeRequests().antMatchers(HELLO_API_URL, USER_API_URL, H2_CONSOLE_URL, SWAGGER_URL).permitAll()
                 .antMatchers(CARRENTAL_API_URL, MANUFACTURER_API_URL).hasAnyRole(ROLE_ADMIN)
                 .antMatchers(CAR_API_URL, PHONE_API_URL).hasAnyRole(ROLE_ADMIN, ROLE_USER)
                 .anyRequest().authenticated()
