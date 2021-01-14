@@ -19,7 +19,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/cr/carrentals")
+@RequestMapping("/api/cr/carrental")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class CarrentalController implements CarrentalControllerDocs {
 

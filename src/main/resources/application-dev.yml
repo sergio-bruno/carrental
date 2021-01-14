@@ -19,3 +19,7 @@ logging:
     br:
       com:
         slbruno: DEBUG
+        
+jwt:
+  secret: carrental
+  validity: 18000

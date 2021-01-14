@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/cr/users")
+@RequestMapping("/api/cr/user")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class UserController implements UserControllerDocs {
 

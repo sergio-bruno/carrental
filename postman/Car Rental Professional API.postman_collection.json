@@ -31,7 +31,7 @@
 				{
 					"name": "CreateUser",
 					"request": {
-						"url": "http://localhost:8080/api/cr/users",
+						"url": "http://localhost:8080/api/cr/user",
 						"method": "POST",
 						"header": [
 							{
@@ -51,7 +51,7 @@
 				{
 					"name": "Update User",
 					"request": {
-						"url": "http://localhost:8080/api/cr/users/1",
+						"url": "http://localhost:8080/api/cr/user/1",
 						"method": "PUT",
 						"header": [
 							{
@@ -71,7 +71,7 @@
 				{
 					"name": "Delete User",
 					"request": {
-						"url": "http://localhost:8080/api/cr/users/1",
+						"url": "http://localhost:8080/api/cr/user/1",
 						"method": "DELETE",
 						"header": [],
 						"body": {},
@@ -82,7 +82,7 @@
 				{
 					"name": "Authenticate User",
 					"request": {
-						"url": "http://localhost:8080/api/cr/users/authenticate",
+						"url": "http://localhost:8080/api/cr/user/authenticate",
 						"method": "POST",
 						"header": [
 							{
@@ -283,7 +283,7 @@
 				{
 					"name": "List cars by user",
 					"request": {
-						"url": "http://localhost:8080/api/cr/cars",
+						"url": "http://localhost:8080/api/cr/car",
 						"method": "GET",
 						"header": [
 							{
