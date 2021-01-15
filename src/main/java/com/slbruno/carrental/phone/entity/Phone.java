@@ -25,10 +25,10 @@ public class Phone extends Auditable {
     private int number;
     
     @Column(columnDefinition = "integer default 0")
-    private int area_code;
+    private int areaCode;
     
-    @Column(nullable = false, length = 100)
-    private String country_code;
+    @Column(nullable = false, length = 10)
+    private String countryCode;
     
     @ManyToOne(cascade = {CascadeType.MERGE})
     private User user;

@@ -39,7 +39,7 @@ public class User extends Auditable {
     @Column(nullable = false, length = 20)
     private Gender gender;
 
-    @Column(nullable = false, unique = true, length = 100)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false, unique = true)

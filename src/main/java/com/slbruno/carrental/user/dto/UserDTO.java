@@ -39,6 +39,7 @@ public class UserDTO {
     @NotNull
     @NotEmpty
     @Email
+    @Size(max = 255)
     private String email;
 
     @NotNull

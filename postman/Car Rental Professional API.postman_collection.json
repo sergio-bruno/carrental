@@ -42,7 +42,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Sergio Admin\",\n\t\"age\": 32,\n\t\"email\": \"sergio.bruno.ti@gmail.com\",\n\t\"gender\": \"MALE\",\n\t\"username\": \"sergio\",\n\t\"password\": \"123456\",\n\t\"birthdate\": \"08/08/1988\",\n\t\"role\": \"ADMIN\"\n}"
+							"raw": "{\n\t\"name\": \"sergio\",\n\t\"age\": 32,\n\t\"email\": \"sergio.bruno.ti@gmail.com\",\n\t\"gender\": \"MALE\",\n\t\"username\": \"sergio\",\n\t\"password\": \"123456\",\n\t\"birthdate\": \"08/08/1988\",\n\t\"role\": \"ADMIN\"\n}"
 						},
 						"description": ""
 					},
@@ -62,7 +62,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Sergio Teste\",\n\t\"age\": 32,\n\t\"email\": \"sergio.bruno@gmail.com\",\n\t\"gender\": \"MALE\",\n\t\"username\": \"rodrigo\",\n\t\"password\": \"123456\",\n\t\"birthdate\": \"23/03/1988\"\n}"
+							"raw": "{\n\t\"name\": \"sergio\",\n\t\"age\": 32,\n\t\"email\": \"sergio.bruno@gmail.com\",\n\t\"gender\": \"MALE\",\n\t\"username\": \"rodrigo\",\n\t\"password\": \"123456\",\n\t\"birthdate\": \"23/03/1988\"\n}"
 						},
 						"description": ""
 					},
@@ -118,7 +118,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZXJnaW8iLCJleHAiOjE2MTA2NzcwOTgsImlhdCI6MTYxMDY1OTA5OH0.20W5pA6kOzVG7WNmgaFs5UHUcvQ3gTGEJBp3Y2Hsmu9AWg1BT1Xf5UMDLOeSYgrQdhbp3fOGljeBXCNBCOkAbg",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZXJnaW8iLCJleHAiOjE2MTA3MTgwMTcsImlhdCI6MTYxMDcwMDAxN30.BzL45J9s5ah4-dIe9vTEZg4jvDIAK3pnGTqbzXeDk5Gp1LsoJYHBPhp5Yhj38m1auW5fB_XLeDHYlXreV4kj7A",
 								"description": ""
 							}
 						],
@@ -252,7 +252,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Jipe\",\n\t\"model\": \"Jipe Truck\",\n\t\"license_plate\": \"KGP1Y82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2021,\n\t\"userId\": 1\n}"
+							"raw": "{\n\t\"name\": \"Jipe\",\n\t\"model\": \"Jipe Truck\",\n\t\"licensePlate\": \"KGP1Y82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2021,\n\t\"userId\": 1\n}"
 						},
 						"description": ""
 					},
@@ -321,7 +321,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Jipe Doblo\",\n\t\"model\": \"Jipe\",\n\t\"license_plate\": \"KGP1M82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2020,\n\t\"userId\": 1\n}"
+							"raw": "{\n\t\"name\": \"Jipe Doblo\",\n\t\"model\": \"Jipe\",\n\t\"licensePlate\": \"KGP1M82\",\n\t\"carrentalId\": 1,\n\t\"manufacturerId\": 1,\n\t\"ano\": 2020,\n\t\"userId\": 1\n}"
 						},
 						"description": ""
 					},
@@ -374,7 +374,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"number\": 988117753,\n\t\"area_code\": 81,\n\t\"country_code\": \"+55\",\n\t\"userId\": 1\n}"
+							"raw": "{\n\t\"number\": 988117753,\n\t\"areaCode\": 81,\n\t\"countryCode\": \"+55\",\n\t\"userId\": 1\n}"
 						},
 						"description": ""
 					},
@@ -443,7 +443,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"number\": 992117753,\n\t\"area_code\": 81,\n\t\"country_code\": \"+55\",\n\t\"userId\": 1\n}"
+							"raw": "{\n\t\"number\": 992117753,\n\t\"areaCode\": 81,\n\t\"countryCode\": \"+55\",\n\t\"userId\": 1\n}"
 						},
 						"description": ""
 					},

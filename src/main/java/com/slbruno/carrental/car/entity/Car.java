@@ -23,8 +23,8 @@ public class Car extends Auditable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String license_plate;
+    @Column(nullable = false, length = 20)
+    private String licensePlate;
 
     @Column(nullable = false, length = 100)
     private String name;
