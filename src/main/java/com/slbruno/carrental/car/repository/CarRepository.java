@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface CarRepository extends JpaRepository<Car, Long> {
 
-    Optional<Car> findByNameAndModelAndUser(String name, String model, User user);
+    Optional<Car> findByNameAndLicensePlateAndUser(String name, String licensePlate, User user);
 
     Optional<Car> findByIdAndUser(Long id, User user);
 

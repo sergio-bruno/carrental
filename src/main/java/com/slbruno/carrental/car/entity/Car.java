@@ -29,10 +29,10 @@ public class Car extends Auditable {
     @Column(nullable = false, length = 100)
     private String name;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String model;
 
-    @Column(columnDefinition = "integer default 0")
+    @Column(columnDefinition = "integer default 1900")
     private int year;
 
     @ManyToOne(cascade = {CascadeType.MERGE})
