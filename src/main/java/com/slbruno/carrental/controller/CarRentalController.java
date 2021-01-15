@@ -10,6 +10,6 @@ public class CarRentalController {
 
 	@GetMapping
 	public String Hello() {
-		return "Hi, car rental ok, 4º message SonarCloud...";
+		return "Hi, car rental ok, 5º message, implementing JWT...";
 	}
 }
