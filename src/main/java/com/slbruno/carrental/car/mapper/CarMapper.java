@@ -11,9 +11,9 @@ public interface CarMapper {
 
     CarMapper INSTANCE = Mappers.getMapper(CarMapper.class);
 
-    Car toModel(CarRequestDTO bookRequestDTO);
+    Car toModel(CarRequestDTO carRequestDTO);
 
-    Car toModel(CarResponseDTO bookRequestDTO);
+    Car toModel(CarResponseDTO carRequestDTO);
 
     CarResponseDTO toDTO(Car bookDTO);
 }
