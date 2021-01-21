@@ -25,6 +25,13 @@ public interface CarrentalControllerDocs {
     })
     CarrentalDTO findByName(String name);
 
+    @ApiOperation(value = "Find carrental by id")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Success carrental found"),
+            @ApiResponse(code = 404, message = "Carrental not found error code")
+    })
+    CarrentalDTO findById(Long id);
+    
     @ApiOperation(value = "List all registered carrentals")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Return all registered carrentals")

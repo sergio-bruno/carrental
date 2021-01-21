@@ -38,7 +38,7 @@ public class CarrentalController implements CarrentalControllerDocs {
     }
 
     @GetMapping("/{id}")
-    public CarrentalDTO findByName(@PathVariable Long id) {
+    public CarrentalDTO findById(@PathVariable Long id) {
         return carrentalService. findById(id);
     }
     
