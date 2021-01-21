@@ -219,7 +219,18 @@
 				{
 					"name": "Find carrental by ID",
 					"request": {
-						"url": "http://localhost:8080/api/cr/carrental/1",
+						"url": "http://localhost:8080/api/cr/carrental/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Find carrental by Name",
+					"request": {
+						"url": "http://localhost:8080/api/cr/carrental/prnome/Localiza Rent a Car",
 						"method": "GET",
 						"header": [],
 						"body": {},

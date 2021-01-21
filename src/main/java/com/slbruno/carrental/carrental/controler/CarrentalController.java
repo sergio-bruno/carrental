@@ -32,11 +32,16 @@ public class CarrentalController implements CarrentalControllerDocs {
         return carrentalService.create(carrentalDTO);
     }
 
-    @GetMapping("/{name}")
+    @GetMapping("/prnome/{name}")
     public CarrentalDTO findByName(@PathVariable String name) {
         return carrentalService.findByName(name);
     }
 
+    @GetMapping("/{id}")
+    public CarrentalDTO findByName(@PathVariable Long id) {
+        return carrentalService. findById(id);
+    }
+    
     @GetMapping
     public List<CarrentalDTO> findAll() {
         return carrentalService.findAll();

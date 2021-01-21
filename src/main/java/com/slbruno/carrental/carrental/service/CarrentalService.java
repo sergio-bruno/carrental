@@ -34,6 +34,12 @@ public class CarrentalService {
         return carrentalMapper.toDTO(foundCarrental);
     }
 
+    public CarrentalDTO findById(Long id) {
+        Carrental foundCarrental = carrentalRepository.findById(id)
+                .orElseThrow(() -> new CarrentalNotFoundException(id));
+        return carrentalMapper.toDTO(foundCarrental);
+    }
+    
     public List<CarrentalDTO> findAll() {
         return carrentalRepository.findAll()
                 .stream()
